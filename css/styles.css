@@ -10,23 +10,23 @@ http://www.bootstrapzero.com
 
 @font-face {
     font-family: mine;
-    src: url("/Users/madisonrusso/Documents/northwestern/classes/spring 23/design portfolio/working prototype/fonts/mine.ttf");
+    src: url("../fonts/mine.ttf");
 }
 
 @font-face {
     font-family: futura;
-    src: url("/Users/madisonrusso/Documents/northwestern/classes/spring 23/design portfolio/working prototype/fonts/Futura.ttc");
+    src: url("../fonts/Futura.ttc");
 }
 
 
 @font-face {
     font-family: fascinate;
-    src: url("/Users/madisonrusso/Documents/northwestern/classes/spring 23/design portfolio/working prototype/fonts/Fascinate-Regular.ttf");
+    src: url("../fonts/Fascinate-Regular.ttf");
 } 
 
 @font-face {
     font-family: righteous;
-    src: url("/Users/madisonrusso/Documents/northwestern/classes/spring 23/design portfolio/working prototype/fonts/Righteous-Regular.ttf") format('truetype');
+    src: url("../fonts/Righteous-Regular.ttf") format('truetype');
 }
 
 html,
