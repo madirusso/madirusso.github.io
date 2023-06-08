@@ -165,6 +165,7 @@ footer {
 .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
     background-color: #333;
 }
+
 .navbar-default .navbar-toggle, .navbar-default .navbar-collapse {
     border-color: transparent;
 }
@@ -177,10 +178,10 @@ footer {
     color: cyan;
 }
 
-/* .navbar-default .nav > li>a:hover,
+.navbar-default .nav > li>a:hover,
 .navbar-default .nav>li>a:focus:hover {
-    color: red;
-} */
+    color: #eee;
+}
 
 .navbar-default .nav > li.active>a,
 .navbar-default .nav>li.active>a:focus {
