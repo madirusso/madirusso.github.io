@@ -64,7 +64,7 @@ a {
 
 a:hover,
 a:focus {
-    color: yellow;
+    color: lime;
     outline: 0;
     text-decoration: none;
 }
@@ -151,15 +151,18 @@ footer {
     font-family: mine;
     color: cyan;
     padding: 15px;
-    -webkit-transition: padding .2s ease-in;
-    -moz-transition: padding .2s ease-in;
-    transition: padding .2s ease-in;
+    /* -webkit-transition: padding .35s ease-in;
+    -moz-transition: padding .35s ease-in;
+    transition: padding .35s ease-in; */
+    -webkit-transition: all .4s;
+    -moz-transition: all .4s;
+    transition: all .4s;
     font-size: 70px;
 }
 
 .navbar-header > .navbar-brand:hover,
 .navbar-header > .navbar-brand:focus {
-    color: #eee;
+    color: magenta;
 }
 
 .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
@@ -180,7 +183,7 @@ footer {
 
 .navbar-default .nav > li>a:hover,
 .navbar-default .nav>li>a:focus:hover {
-    color: #eee;
+    color: blueviolet;
 }
 
 .navbar-default .nav > li.active>a,
@@ -211,7 +214,8 @@ footer {
 
     .navbar-default .navbar-header .navbar-brand:hover,
     .navbar-default .navbar-header .navbar-brand:focus {
-        color: whitesmoke;
+        /* color: whitesmoke; */
+        color: magenta;
     }
 
     .navbar-default .nav > li>a,
@@ -225,7 +229,8 @@ footer {
 
     .navbar-default .nav > li>a:hover,
     .navbar-default .nav>li>a:focus:hover {
-        color: #fefefe;
+        /* color: #fefefe; */
+        color: blueviolet;
     }
 
     .navbar-default.affix {
@@ -243,7 +248,8 @@ footer {
 
     .navbar-default.affix .navbar-header .navbar-brand:hover,
     .navbar-default.affix .navbar-header .navbar-brand:focus {
-        color: whitesmoke;
+        /* color: whitesmoke; */
+        color: magenta;
     }
 
     .navbar-default.affix .nav > li>a,
@@ -255,7 +261,7 @@ footer {
 
     .navbar-default.affix .nav > li>a:hover,
     .navbar-default.affix .nav>li>a:focus:hover {
-        color: whitesmoke;
+        color: magenta;
     }
 }
 
@@ -552,7 +558,7 @@ fieldset[disabled] .btn-default.active {
 ::selection {
     text-shadow: none;
     color: #fff;
-    background: #333;
+    background: darkgray;
 }
 
 img::selection {
