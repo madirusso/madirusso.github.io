@@ -29,9 +29,19 @@ http://www.bootstrapzero.com
     src: url("../fonts/Righteous-Regular.ttf") format('truetype');
 } */
 
-@font-face {
+/*  @font-face {
     font-family: dmserif;
-    src: url("fonts/DM_Serif_Display/DMSerifDisplay-Regular.ttf")
+    src: url("../fonts/DM_Serif_Display/DMSerifDisplay-Regular.ttf")
+}  */
+
+@font-face {
+    font-family: stamp;
+    src: url("../fonts/fashion-stamp-font/FashionStamp-DOv2W.otf")
+}
+
+@font-face {
+    font-family: urbanist;
+    src: url("../fonts/Urbanist/Urbanist-VariableFont_wght.ttf")
 }
 
 html,
@@ -41,10 +51,10 @@ body {
 }
 
 body {
-    font-family: dmserif;
-    background-color: white;
-    color: #d3d3d3;
-    -webkit-tap-highlight-color: #D8D5CE;
+    font-family: urbanist;
+    background-color: #DFD8CC;
+    color: #DFD8CC;
+    -webkit-tap-highlight-color: #222;
     padding-bottom: 0;
 }
 
@@ -61,31 +71,32 @@ hr.light {
 } */
 
 a {
-    color: pink;
+    color: #333;
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
     transition: all .35s;
+    font-family: stamp;
 }
 
 a:hover,
 a:focus {
-    color: black;
+    color: maroon;
     outline: 0;
     text-decoration: none;
 }
 
 h1,h2,h3,h5,h6 {
-    /* font-family: mine; */
-    color: black;
+    font-family: stamp;
+    color: #333;
 }
 
 h4 .gallery-box-content{
-    color: white !important;
+    color: #DFD8CC !important;
 }
 
 p {
-    font-size: 18px;
-    color: black;
+    font-size: 24px;
+    color: #333;
     /* line-height: 1.7; */
     /* margin-bottom: 20px; */
 }
@@ -100,7 +111,7 @@ p {
 }
 
 .bg-primary {
-    background-color: white;
+    background-color: #DFD8CC;
 }
 
 /* .bg-dark {
@@ -109,14 +120,14 @@ p {
 } */
 
 .greeting {
-    /* font-family: mine; */
+    font-family: stamp; 
     text-transform: none;
-    color: black;
+    color: #222;
     font-size: 100px;
 }
 
 .text-faded {
-    color: black;
+    color: #333;
     text-align: left;
 }
 
@@ -125,11 +136,11 @@ p {
 } */
 
 .text-primary {
-    color: black;
+    color: #333;
 }
 
 .modal-content {
-    background-color: white;
+    background-color: #DFD8CC;
 }
 
 /* section {
@@ -150,16 +161,16 @@ footer {
 
 .navbar-default {
     /* border-color: rgba(35,35,35,.05); */
-    /* font-family: mine; */
-    background-color: white;
+    font-family: stamp;
+    background-color: #DFD8CC;
     -webkit-transition: all .4s;
     -moz-transition: all .4s;
     transition: all .4s;
 }
 
 .navbar-header > .navbar-brand {
-    /* font-family: mine; */
-    color: black;
+    font-family: stamp;
+    color: #333;
     padding: 15px;
     /* -webkit-transition: padding .35s ease-in;
     -moz-transition: padding .35s ease-in;
@@ -172,15 +183,15 @@ footer {
 
 .navbar-header > .navbar-brand:hover,
 .navbar-header > .navbar-brand:focus {
-    color: black;
+    color: #333;
 }
 
 .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
-    background-color: white;
+    background-color: #DFD8CC;
 }
 
 .navbar-default .navbar-toggle, .navbar-default .navbar-collapse {
-    border-color: white !important;
+    border-color: #DFD8CC ;
 }
 
 .navbar-default .nav > li>a,
@@ -188,51 +199,51 @@ footer {
     /* text-transform: uppercase; */
     font-size: 30px;
     font-weight: 700;
-    color: black;
+    color: #333;
 }
 
 .navbar-default .nav > li>a:hover,
 .navbar-default .nav>li>a:focus:hover {
-    color: black;
+    color: #333;
 }
 
 .navbar-default .nav > li.active>a,
 .navbar-default .nav>li.active>a:focus {
-    color: black !important;
-    background-color: white;
+    color: #333 ;
+    background-color: #DFD8CC;
 }
 
 .navbar-default .nav > li.active>a:hover,
 .navbar-default .nav>li.active>a:focus:hover
 {
-    background-color: white;
+    background-color: #DFD8CC;
 }
 
 
 @media(min-width:768px) {
     .navbar-default {
-        border-color: white;
-        background-color: white;
+        border-color: #DFD8CC;
+        background-color: #DFD8CC;
         min-height: 60px;
     }
 
     .navbar-header > .navbar-brand {
         /* color: rgba(255,255,255,0.7); */
-        color:black;
-        padding: 19px;
+        color:#222;
+        padding: 30px;
     }
 
     .navbar-default .navbar-header .navbar-brand:hover,
     .navbar-default .navbar-header .navbar-brand:focus {
         /* color: whitesmoke; */
-        color: black;
+        color: maroon;
     }
 
     .navbar-default .nav > li>a,
     .navbar-default .nav>li>a:focus {
         /* color: rgba(255,255,255,0.8); */
-        padding: 20px;
-        color: black;
+        padding: 31px;
+        color: #333;
         letter-spacing: 1.1px;
         /* text-shadow: 1px 1px 1px rgba(60,60,60,0.7); */
     }
@@ -240,12 +251,12 @@ footer {
     .navbar-default .nav > li>a:hover,
     .navbar-default .nav>li>a:focus:hover {
         /* color: #fefefe; */
-        color: black;
+        color: maroon;
     }
 
     .navbar-default.affix {
-        border-color: white;
-        background-color: white;
+        border-color: #DFD8CC;
+        background-color: #DFD8CC;
     }
 
     .navbar-default.affix .navbar-header .navbar-brand {
@@ -253,25 +264,25 @@ footer {
         color: #9c27b0;
         padding: 20px;
         letter-spacing: 1px; */
-        color: black;
+        color: #333;
     }
 
     .navbar-default.affix .navbar-header .navbar-brand:hover,
     .navbar-default.affix .navbar-header .navbar-brand:focus {
         /* color: whitesmoke; */
-        color: black;
+        color: #333;
     }
 
     .navbar-default.affix .nav > li>a,
     .navbar-default.affix .nav>li>a:focus {
         /* color: #ddd; */
         /* text-shadow: 1px 1px 1px rgba(30,30,30,0.7); */
-        color: black;
+        color: #333;
     }
 
     .navbar-default.affix .nav > li>a:hover,
     .navbar-default.affix .nav>li>a:focus:hover {
-        color: black;
+        color: maroon;
     }
 }
 
@@ -279,9 +290,9 @@ header {
     position: relative;
     min-height: auto;
     text-align: right;
-    color: black;
+    color: dimgray;
     width: 100%;
-    background-color: white;
+    background-color: #DFD8CC;
     background-position: center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -306,7 +317,7 @@ header .header-content .inner p {
     /* margin-bottom: 50px; */
     font-size: 14px;
     font-weight: 300;
-    color: white;
+    color: #DFD8CC;
 }
 
 /* #video-background {
@@ -333,7 +344,7 @@ h4 {
 }
 
 footer {
-    background-color:white;
+    background-color:#DFD8CC;
     /* padding-top: 0; */
 }
 
@@ -443,7 +454,7 @@ textarea {
     width: 100%;
     height: 100%;
     text-align: center;
-    color: #fff;
+    color: #DFD8CC;
     opacity: 0;
     background: rgba(44,44,44,.8);
     -webkit-transition: all .35s;
@@ -482,7 +493,7 @@ textarea {
 .btn-default {
     border-color: #333;
     color: #333;
-    background-color: #fff;
+    background-color: #DFD8CC;
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
     transition: all .35s;
@@ -496,7 +507,7 @@ textarea {
 .open > .dropdown-toggle.btn-default {
     border-color: #333;
     color: #333;
-    background-color: #f2f2f2;
+    background-color: #DFD8CC;
     opacity: 0.7;
 }
 
@@ -525,12 +536,12 @@ fieldset[disabled] .btn-default:active,
 .btn-default[disabled].active,
 fieldset[disabled] .btn-default.active {
     border-color: #333;
-    background-color: #fff;
+    background-color: #DFD8CC;
     opacity: 0.7;
 }
 
 .btn-default .badge {
-    color: #fff;
+    color: #DFD8CC;
     background-color: #333;
 }
 
@@ -551,7 +562,7 @@ fieldset[disabled] .btn-default.active {
     border: 0;
     /* border-radius: 5px; */
     border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
-    /* font-family: mine; */
+    font-family: stamp;
 }
 
 .btn-xl {
@@ -561,22 +572,22 @@ fieldset[disabled] .btn-default.active {
 
 ::-moz-selection {
     text-shadow: none;
-    color: #fff;
-    background: #333;
+    color: #DFD8CC;
+    background: #222;
 }
 
 ::selection {
     text-shadow: none;
-    color: #fff;
-    background: darkgray;
+    color: #DFD8CC;
+    background: #222;
 }
 
 img::selection {
-    color: #fff;
+    color: #DFD8CC;
     background: 0 0;
 }
 
 img::-moz-selection {
-    color: #fff;
+    color: #DFD8CC;
     background: 0 0;
 }
