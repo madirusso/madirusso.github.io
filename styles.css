@@ -1,0 +1,61 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+/* ---------fonts ----------*/
+
+@font-face {
+    font-family: newake;
+    src: url("assets/fonts/indieground-newakefont-demo/Newake-Font-Demo.otf");
+}
+
+@font-face {
+    font-family: stamp;
+    src: url("assets/fonts/fashion-stamp-font/FashionStamp-DOv2W.otf")
+}
+
+@font-face {
+    font-family: urbanist;
+    src: url("assets/fonts/Urbanist/Urbanist-VariableFont_wght.ttf")
+}
+
+@font-face {
+    font-family: futura;
+    src: url("assets/fonts/Futura.ttc")
+}
+
+/* ---------landing page ---------*/
+body.gradient-background {
+    background-image: url("assets/images/backgrounds/indieground-freebies-textures-gradients/Freebie-GradientTextures-02.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1.welcome {
+    font-size: 50px;
+    color: whitesmoke;
+    font-family: stamp;
+    padding: 20px;
+}
+
+body.landing {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+
+/* --------animations--------- */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.welcome {
+    animation: fadeIn 1.5s ease-in-out;
+}
