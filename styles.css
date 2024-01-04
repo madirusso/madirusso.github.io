@@ -33,18 +33,22 @@ body.gradient-background {
 }
 
 h1.welcome {
-    font-size: 50px;
-    color: whitesmoke;
-    font-family: stamp;
-    padding: 20px;
+    font-size: 75px;
+    color: #333;
+    font-family: newake;
+    padding-right: 20px;
 }
 
-body.landing {
+h2.welcome {
+    color:#333;
+    font-family: newake;
+}
+
+.landing {
     display: flex;
     align-items: center;
     justify-content: right;
 }
-
 
 /* --------animations--------- */
 @keyframes fadeIn {
