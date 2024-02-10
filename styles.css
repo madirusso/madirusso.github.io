@@ -25,6 +25,16 @@ html, body {
     src: url("assets/fonts/Futura.ttc")
 }
 
+/* ----------general styling----------*/
+
+::selection {
+    background:#333;
+}
+
+::-moz-selection {
+    background:#333;
+}
+
 /* ---------landing page ---------*/
 body.gradient-background {
     background-image: url("assets/images/backgrounds/indieground-freebies-textures-gradients/Freebie-GradientTextures-02.jpg");
@@ -34,15 +44,18 @@ body.gradient-background {
 
 h1.welcome {
     font-size: 75px;
-    color: #333;
+    color: white;
+    opacity: 80%;
     font-family: newake;
     padding-right: 20px;
 }
 
 h2.welcome {
-    color:#333;
-    font-family: newake;
+    color: white;
+    opacity: 75%;
+    font-family: urbanist;
 }
+
 
 .landing {
     display: flex;
@@ -62,4 +75,25 @@ h2.welcome {
 
 .welcome {
     animation: fadeIn 1.5s ease-in-out;
+}
+
+/*--------navbar--------*/
+
+.delayed-navbar {
+    animation-delay: 1s;
+    animation: fadeIn 1.5s ease-in-out;
+    float: bottom;
+}
+
+.navbar {
+    font-family: urbanist;
+}
+
+a.nav-link {
+    color: white;
+    opacity: 75%;
+}
+
+.nav-brand {
+    opacity: 80%;
 }

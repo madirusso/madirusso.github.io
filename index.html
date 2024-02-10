@@ -17,15 +17,54 @@
     <link rel="stylesheet" href="bootstrap-4/css/bootstrap.css.map" />
     <link rel="stylesheet" href="bootstrap-4/css/bootstrap.min.css" />
     <link rel="stylesheet" href="bootstrap-4/css/bootstrap.min.css.map" />
+
+    <style>
+        #grain {
+            pointer-events: none;
+        }
+    </style>
 </head>
    
-<body class = "gradient-background landing">
-    <a href = "https://indieground.net/blog/weekly-inspiration-dose-172/" style = "text-decoration: none;">
+<body id = "grain" class = "gradient-background landing">
+    
+    <div id = "wrapper"></div>
+    <a href = "#" style = "text-decoration: none;">
     <div class = "bg-image">
-        <h1 class = "welcome">WELCOME</h1>
+        <h1 class = "welcome">welcome</h1>
         <h2 class = "welcome">to madi's portfolio.</h2>
     </div>
     </a>
-    
+
+    <nav class = "navbar fixed-bottom navbar-dark navbar-expand-lg">
+        <a class = "navbar-brand" href = "#"><h2>home</h2></a>
+        <a class = "nav-link" href = "#"><h4>design</h4></a>
+        <a class = "nav-link" href = "#"><h4>engineering</h4></a>
+        <a class = "nav-link" href = "#"><h4>art</h4></a>
+        
+    </nav>
+   
+    <script src="https://cdn.jsdelivr.net/npm/grained@0.0.2/grained.min.js"></script>
+    <script>
+    var options = {
+        animate: true,
+        patternWidth: 100,
+        patternHeight: 100,
+        grainOpacity: 0.05,
+        grainDensity: 1,
+        grainWidth: 1,
+        grainHeight: 1
+    };
+    grained("#grain", options);
+    </script>
+    <script src = "assets/js/grain.js"></script>
+    <script src = "bootstrap-4/js/bootstrap.bundle.js"></script>
+    <script src = "bootstrap-4/js/bootstrap.bundle.js.map"></script>
+    <script src = "bootstrap-4/js/bootstrap.bundle.min.js"></script>
+    <script src = "bootstrap-4/js/bootstrap.bundle.min.js.map"></script>
+    <script src = "bootstrap-4/js/bootstrap.js"></script>
+    <script src = "bootstrap-4/js/bootstrap.js.map"></script>
+    <script src = "bootstrap-4/js/bootstrap.min.js"></script>
+    <script src = "bootstrap-4/js/bootstrap.min.js.map"></script>
+
 </body>
     
