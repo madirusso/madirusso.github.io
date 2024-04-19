@@ -35,6 +35,35 @@ html, body {
     background:#333;
 }
 
+p {
+    font-family: urbanist;
+    color: #999;
+}
+
+
+
+/* --------animations--------- */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.welcome {
+    animation: fadeIn 1.5s ease-in;
+}
+
+h1.sub-page {
+    animation: fadeIn 1s ease-in;
+}
+
+p.sub-page {
+    animation: fadeIn 2s ease-in;
+}
+
 /* ---------landing page ---------*/
 body.gradient-background {
     background-image: url("assets/images/backgrounds/indieground-freebies-textures-gradients/Freebie-GradientTextures-02.jpg");
@@ -63,19 +92,6 @@ h2.welcome {
     justify-content: right;
 }
 
-/* --------animations--------- */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-.welcome {
-    animation: fadeIn 1.5s ease-in-out;
-}
 
 /*--------navbar--------*/
 
@@ -94,6 +110,32 @@ a.nav-link {
     opacity: 75%;
 }
 
+a.nav-link:hover{
+    color: #999;
+}
+
 .nav-brand {
     opacity: 80%;
+}
+
+/* ---------sub pages ---------*/
+
+body.sub-page {
+    background: #2C2825;
+    max-height: auto;
+} 
+
+h1.sub-page {
+    padding-bottom: 10vh;
+    font-family: newake;
+    color: white;
+}
+
+div.sub-page{
+    overflow-y: scroll;
+    height: 100vh;
+}
+
+img.thumbnail{
+    padding: 50px;
 }
