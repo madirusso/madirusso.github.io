@@ -42,26 +42,40 @@ p {
 
 
 
+
 /* --------animations--------- */
-@keyframes fadeIn {
+@keyframes fadeInmain {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 0.8;
+    }
+
+    
+}
+
+@keyframes fadeInsub {
     from {
         opacity: 0;
     }
     to {
         opacity: 1;
     }
+
+    
 }
 
 .welcome {
-    animation: fadeIn 1.5s ease-in;
+    animation: fadeInmain 1.5s ease-in;
 }
 
 h1.sub-page {
-    animation: fadeIn 1s ease-in;
+    animation: fadeInsub 1s ease-in;
 }
 
 p.sub-page {
-    animation: fadeIn 2s ease-in;
+    animation: fadeInsub 1.5s ease-in;
 }
 
 /* ---------landing page ---------*/
@@ -73,8 +87,8 @@ body.gradient-background {
 
 h1.welcome {
     font-size: 75px;
-    color: white;
-    opacity: 80%;
+    color: white; 
+    opacity: 0.8;
     font-family: newake;
     padding-right: 20px;
 }
@@ -110,12 +124,20 @@ a.nav-link {
     opacity: 75%;
 }
 
+a.nav-link.active {
+    text-decoration: underline;
+}
+
 a.nav-link:hover{
     color: #999;
 }
 
 .nav-brand {
     opacity: 80%;
+}
+
+.navbar-custom {
+    background-color: #2C2825;
 }
 
 /* ---------sub pages ---------*/
@@ -138,4 +160,5 @@ div.sub-page{
 
 img.thumbnail{
     padding: 50px;
+    animation: fadeInsub 2s ease-in;
 }
