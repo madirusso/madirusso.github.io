@@ -17,24 +17,51 @@
     <link rel="stylesheet" href="bootstrap-4/css/bootstrap.css.map" />
     <link rel="stylesheet" href="bootstrap-4/css/bootstrap.min.css" />
     <link rel="stylesheet" href="bootstrap-4/css/bootstrap.min.css.map" />
-       
 </head>
    
-<body id = "grain" class = "gradient-background landing">
+<body id = "grain" class = "sub-page">
+    <div class = "container-fluid span12 sub-page">
+        <div class = "text-center">
+            <br><br>
+            <h1 class = "sub-page center">pixel art</h1>
+        </div>
     
-   
-    <a href = "#" style = "text-decoration: none;">
-    <div class = "bg-image">
-        <h1 class = "welcome">welcome</h1>
-        <h2 class = "welcome">to madi's portfolio.</h2>
+        <div class = "row ">
+            <div class = "col-md-4">
+                <img class = "img-fluid thumbnail" src = "assets/images/art/cedar pixel_scaled_33x_pngcrushed copy.png"><br>
+                <p class = "caption-text">cedar</p>
+            </div>
+            <div  class = "col-md-4">
+                <img class = "img-fluid thumbnail" src = "assets/images/art/douglas fir pixel art_scaled_39x_pngcrushed copy.png"><br>
+                <p class = "caption-text">douglas fir</p>
+            </div>
+            <div  class = "col-md-4">
+                <img class = "img-fluid thumbnail" src = "assets/images/art/hemlock pixel_scaled_40x_pngcrushed copy.png"><br>
+                <p class = "caption-text">hemlock</p>
+            </div>
+           
+        </div>
+        <div class = "row " style = "padding-bottom: 50px;">
+            <div class = "col-md-4">
+                <img class = "img-fluid thumbnail" src = "assets/images/art/currant pixel art_scaled_59x_pngcrushed copy.png"><br>
+                <p class = "caption-text">currant</p>
+            </div>
+            <div  class = "col-md-4">
+                <img class = "img-fluid thumbnail" src = "assets/images/art/thimbleberry pixel art_scaled_66x_pngcrushed copy.png"><br>
+                <p class = "caption-text">thimbleberry</p>
+            </div>
+            <div  class = "col-md-4">
+                
+            </div>
+           
+        </div>
     </div>
-    </a>
 
     <nav class = "navbar fixed-bottom navbar-dark navbar-expand-lg">
         <a class = "navbar-brand" href = "index.html"><h2>home</h2></a>
         <a class = "nav-link" href = "design.html"><h4>design</h4></a>
         <a class = "nav-link" href = "engineering.html"><h4>engineering</h4></a>
-        <a class = "nav-link" href = "art.html"><h4>art</h4></a>
+        <a class = "nav-link active" href = "art.html"><h4>art</h4></a>
         <a class = "nav-link" href = "contact.html"><h4>contact</h4></a>
         
     </nav>
@@ -45,16 +72,13 @@
         animate: true,
         patternWidth: 100,
         patternHeight: 100,
-        grainOpacity: 0.05, 
+        grainOpacity: 0.05,
         grainDensity: 1,
         grainWidth: 1,
         grainHeight: 1
     };
-    
     grained("#grain", options);
     </script>
-
-
     <script src = "assets/js/grain.js"></script>
     <script src = "bootstrap-4/js/bootstrap.bundle.js"></script>
     <script src = "bootstrap-4/js/bootstrap.bundle.js.map"></script>

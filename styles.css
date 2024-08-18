@@ -162,3 +162,8 @@ img.thumbnail{
     padding: 50px;
     animation: fadeInsub 2s ease-in;
 }
+
+p.caption-text {
+    font-size: 20px;
+    text-align: right;
+}
